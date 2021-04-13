@@ -1,0 +1,32 @@
+
+const images = [
+  "/images/1.jpg",
+  "/images/2.jfif",
+  "/images/3.jfif",
+  "/images/sadpeepo.gif",
+  "/images/waterdogo.gif",
+  "/images/5.jpg",
+  "/images/6.jpg",
+  "/images/7.jpg",
+  "/images/8.jpg",
+  "/images/9.jpg",
+  "/images/10.jpg",
+  "/images/11.jpg",
+  "/images/12.jpg",
+  "/images/13.jpg",
+  "/images/doggopoopat.gif",
+  "/images/dogotoilet.gif",
+  "/images/14.jpg",
+  "/images/15.jpg",
+  "/images/16.jpg",
+  "images/runningdogo.gif",
+  "/images/17.jpg",
+  "/images/18.jpg",
+  "/images/19.jpg",
+  "/images/20.jpg",
+  "/images/21.jpg",
+  "https://media.discordapp.net/attachments/598165140579287069/825715051196710912/ezgif.com-gif-maker_1_1.gif",
+  "/images/22.jpg",
+]
+
+export default images;

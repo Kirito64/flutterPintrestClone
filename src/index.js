@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Main from "./pages/main"
 import reportWebVitals from './reportWebVitals';
 import ImageCard from './components/body/imagecard';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ImageCard/>
+    <Main/>
   </React.StrictMode>,
   document.getElementById('root')
 );

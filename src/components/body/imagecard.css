@@ -1,9 +1,153 @@
 .container{
-    border-radius: 5px;
-    width: 50%;
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    width:100%;
+    margin: 5px;
 }
 
 .image{
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: aqua;
+    width: 100%;
 }
+
+.floatingbutton{
+    position: absolute;
+    display: flex;
+    opacity: 0.75;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcyan;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    bottom: 10px;
+    margin-left: 4px;
+}
+
+.options{
+  position: absolute;
+  display: flex;
+  opacity: 0.75;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+}
+
+.source{
+  position: absolute;
+  display: flex;
+  opacity: 0.75;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  height: 30px;
+  padding: 4px 15px;
+  border-radius: 30px;
+  bottom: 10px;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translateX(-50%);
+}
+
+
+.icon{
+    height: 50%;
+    width: 50%;
+    color: black;
+}
+
+.floatingbutton:hover, .source:hover, .options:hover{
+    opacity: 1;
+}
+
+
+.image:hover{
+  opacity: 0.75;
+}
+
+.image:hover ~ .control{
+  display: flex;
+}
+
+.control:hover {
+  display: flex;
+}
+
+.control:hover + .image{
+  opacity: 0.75;
+}
+
+
+.control{
+  display: none;
+}
+
+
+
+
+@media (max-width: 1200px){
+  .floatingbutton{
+    height: 30px;
+    width: 30px;
+  }
+
+  .container .image{
+    border-radius: 25px;
+  }
+
+}
+@media (max-width: 900px){
+  .floatingbutton{
+    height: 25px;
+    width: 25px;
+  } 
+
+  .options{
+    height: 25px;
+    width: 25px;
+  }
+
+  .source{
+   height: 25px;
+  }
+
+  
+  .container .image{
+    border-radius: 15px;
+  }
+
+  .source{
+      font-size: 0.9em;
+      padding: 5px 7px;
+    
+  }
+
+} 
+
+@media (max-width: 600px){
+  .floatingbutton{
+    height: 25px;
+    width:25px;
+  }
+
+
+  .container .image{
+    border-radius: 10px;
+  }
+
+  .source{
+
+    top:10px;
+    padding:5px 7px;
+    font-size: 0.8em;
+  }
+
+}
+
